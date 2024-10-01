@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-        <mxGraphModel dx="1209" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1578" dy="1040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
@@ -11,40 +11,40 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-3" value="API - Server (NestJS)" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="474" y="430" width="200" height="86" as="geometry"/>
+                    <mxGeometry x="464" y="393" width="200" height="86" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-5" value="PostgreSQL" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="514" y="147" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="504" y="110" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-6" value="database" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="504" y="117" width="70" height="30" as="geometry"/>
+                    <mxGeometry x="494" y="80" width="70" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="VlvfC72kh926NM7jXRgK-9" target="VlvfC72kh926NM7jXRgK-5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-9" value="prisma" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="534" y="274" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="524" y="237" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-10" value="ORM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="584" y="274" width="50" height="30" as="geometry"/>
+                    <mxGeometry x="574" y="237" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-12" value="backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="170" y="60" width="70" height="30" as="geometry"/>
+                    <mxGeometry x="320" y="30" width="70" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-14" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="VlvfC72kh926NM7jXRgK-15" target="VlvfC72kh926NM7jXRgK-3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-15" value="PassportJS&lt;br&gt;(JWT-Authentifizierung)" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="200" y="442" width="190" height="62" as="geometry"/>
+                    <mxGeometry x="190" y="405" width="190" height="62" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-18" value="zod&lt;div&gt;(Data schema declaration and validation)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="740" y="442" width="211" height="62" as="geometry"/>
+                    <mxGeometry x="730" y="405" width="211" height="62" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-19" style="edgeStyle=none;html=1;fontSize=12;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="VlvfC72kh926NM7jXRgK-20" target="VlvfC72kh926NM7jXRgK-3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="VlvfC72kh926NM7jXRgK-20" value="nestjs/swagger&lt;br&gt;(OpenAPI-compliant API documentation)" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-                    <mxGeometry x="443.5" y="574" width="261" height="62" as="geometry"/>
+                    <mxGeometry x="433.5" y="537" width="261" height="62" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
