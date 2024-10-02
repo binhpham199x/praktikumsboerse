@@ -27,7 +27,7 @@ model User {
   email    String @unique
   hash String
 
-  Role Role
+  role Role
 
   company Company?
   learner Learner?
