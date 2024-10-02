@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Rolle {
+  ADMIN
+  BETRIEB
+  LERNENDER
+}
+
+model Benutzer {
+  benutzerId     Int      @id @default(autoincrement())
+  erstelltAm     DateTime @default(now())
+  aktualisiertAm DateTime @updatedAt
+
+  email    String @unique
+  password String
+
+  Rolle Rolle
+
+  betrieb   Betrieb?
+  lernender Lernender?
+}
+
+model Betrieb {
+  id Int @id @default(autoincrement())
+
+  name         String
+  beschreibung String
+  stadt        String
+
+  benutzer   Benutzer @relation(fields: [benutzerId], references: [benutzerId])
+  benutzerId Int      @unique
+
+  praktikumsstellen Praktikumsstelle[]
+}
+
+model Praktikumsstelle {
+  id             Int      @id @default(autoincrement())
+  erstelltAm     DateTime @default(now())
+  aktualisiertAm DateTime @updatedAt
+
+  name         String
+  beschreibung String?
+
+  Betrieb   Betrieb? @relation(fields: [betriebId], references: [id])
+  betriebId Int?
+}
+
+model Lernender {
+  id Int @id @default(autoincrement())
+
+  vorname  String
+  nachname String
+
+  benutzer    Benutzer    @relation(fields: [benutzerId], references: [benutzerId])
+  benutzerId  Int         @unique
+  bewerbungen Bewerbung[]
+}
+
+enum Bewerbungsstatus {
+  AKZEPTIERT
+  ABGELEHNT
+  AUSSTEHEND
+}
+
+model Bewerbung {
+  id             Int      @id @default(autoincrement())
+  erstelltAm     DateTime @default(now())
+  aktualisiertAm DateTime @updatedAt
+
+  nachricht String
+  status    Bewerbungsstatus @default(AUSSTEHEND)
+
+  Lernender   Lernender? @relation(fields: [lernenderId], references: [id])
+  lernenderId Int?
+}
