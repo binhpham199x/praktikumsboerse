@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="OR2eZVDD8Wp4GMD3wSqp">
-        <mxGraphModel dx="664" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="1936" dy="847" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -22,7 +22,7 @@
                 <mxCell id="deuMdUlMVk6O5wJ9eWme-1" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
                     <mxGeometry x="217" y="306" width="33" height="66" as="geometry"/>
                 </mxCell>
-                <mxCell id="deuMdUlMVk6O5wJ9eWme-2" value="Einloggen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="deuMdUlMVk6O5wJ9eWme-2" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="578" y="276" width="130" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="deuMdUlMVk6O5wJ9eWme-5" target="deuMdUlMVk6O5wJ9eWme-12" edge="1">
@@ -34,22 +34,22 @@
                 <mxCell id="39" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0.055;entryY=0.716;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="deuMdUlMVk6O5wJ9eWme-5" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="deuMdUlMVk6O5wJ9eWme-5" value="Betrieb" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                <mxCell id="deuMdUlMVk6O5wJ9eWme-5" value="Company" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
                     <mxGeometry x="102" y="562" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="deuMdUlMVk6O5wJ9eWme-6" value="Lernende" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                <mxCell id="deuMdUlMVk6O5wJ9eWme-6" value="Learner" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
                     <mxGeometry x="1037" y="502" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="deuMdUlMVk6O5wJ9eWme-11" value="Ausloggen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="deuMdUlMVk6O5wJ9eWme-11" value="Logout" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="768" y="336" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="deuMdUlMVk6O5wJ9eWme-12" value="Pratikumsstelle anlegen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="deuMdUlMVk6O5wJ9eWme-12" value="create Intership" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="368" y="516" width="170" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="deuMdUlMVk6O5wJ9eWme-13" target="deuMdUlMVk6O5wJ9eWme-6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="deuMdUlMVk6O5wJ9eWme-13" value="Bewerben" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="deuMdUlMVk6O5wJ9eWme-13" value="apply Internship" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="708" y="502" width="160" height="37" as="geometry"/>
                 </mxCell>
                 <mxCell id="deuMdUlMVk6O5wJ9eWme-17" value="REST API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
@@ -61,10 +61,10 @@
                         <mxPoint x="277" y="236" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" value="Pratikumsstelle suchen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="2" value="search Internship" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="538" y="182" width="170" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Pratikumsstelle löschen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="6" value="delete Internship" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="348" y="412" width="170" height="36" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;" parent="1" source="deuMdUlMVk6O5wJ9eWme-11" target="deuMdUlMVk6O5wJ9eWme-2" edge="1">
@@ -85,8 +85,10 @@
                         <mxPoint x="723.1162830234884" y="335.8255754647671" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;" parent="1" source="15" target="deuMdUlMVk6O5wJ9eWme-6" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="16" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;" parent="1" target="deuMdUlMVk6O5wJ9eWme-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1052" y="320" as="sourcePoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="17" style="edgeStyle=none;html=1;startArrow=block;startFill=1;endArrow=none;endFill=0;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -101,7 +103,7 @@
                 <mxCell id="20" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="15" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Benutzer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                <mxCell id="15" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
                     <mxGeometry x="1037" y="236" width="30" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" style="edgeStyle=none;html=1;startArrow=block;startFill=1;endArrow=none;endFill=0;" parent="1" edge="1">
@@ -114,13 +116,13 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="25" value="Pratikumsstelle bearbeiten" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="25" value="edit Internship" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="450" y="572" width="170" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="Pratikumsstelle aktivieren" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="26" value="activate Internship" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="327" y="296" width="170" height="36" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="Pratikumsstelle deaktivieren" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="27" value="deactivate Internship" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="327" y="352" width="170" height="36" as="geometry"/>
                 </mxCell>
                 <mxCell id="29" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;" parent="1" edge="1">
@@ -146,6 +148,9 @@
                         <mxPoint x="501.1317887318942" y="552.575414002331" as="sourcePoint"/>
                         <mxPoint x="662.0477520391596" y="335.78553474713453" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.012;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="deuMdUlMVk6O5wJ9eWme-5" target="deuMdUlMVk6O5wJ9eWme-5">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
