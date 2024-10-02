@@ -13,76 +13,76 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum Rolle {
+enum Role {
   ADMIN
-  BETRIEB
-  LERNENDER
+  COMPANY
+  LEARNER
 }
 
-model Benutzer {
-  benutzerId     Int      @id @default(autoincrement())
-  erstelltAm     DateTime @default(now())
-  aktualisiertAm DateTime @updatedAt
+model User {
+  userId    Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   email    String @unique
   password String
 
-  Rolle Rolle
+  Role Role
 
-  betrieb   Betrieb?
-  lernender Lernender?
+  company Company?
+  learner Learner?
 }
 
-model Betrieb {
+model Company {
   id Int @id @default(autoincrement())
 
-  name         String
-  beschreibung String
-  stadt        String
+  name        String
+  description String
+  city        String
 
-  benutzer   Benutzer @relation(fields: [benutzerId], references: [benutzerId])
-  benutzerId Int      @unique
+  user   User @relation(fields: [userId], references: [userId])
+  userId Int  @unique
 
-  praktikumsstellen Praktikumsstelle[]
+  internship Internship[]
 }
 
-model Praktikumsstelle {
-  id             Int      @id @default(autoincrement())
-  erstelltAm     DateTime @default(now())
-  aktualisiertAm DateTime @updatedAt
+model Internship {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  name         String
-  beschreibung String?
+  name        String
+  description String?
 
-  Betrieb   Betrieb? @relation(fields: [betriebId], references: [id])
-  betriebId Int?
+  Company   Company? @relation(fields: [companyId], references: [id])
+  companyId Int?
 }
 
-model Lernender {
+model Learner {
   id Int @id @default(autoincrement())
 
-  vorname  String
-  nachname String
+  firstName String
+  lastName  String
 
-  benutzer    Benutzer    @relation(fields: [benutzerId], references: [benutzerId])
-  benutzerId  Int         @unique
-  bewerbungen Bewerbung[]
+  user         User          @relation(fields: [userId], references: [userId])
+  userId       Int           @unique
+  applications Application[]
 }
 
-enum Bewerbungsstatus {
-  AKZEPTIERT
-  ABGELEHNT
-  AUSSTEHEND
+enum ApplicationStatus {
+  ACCEPTED
+  REJECTED
+  PENDING
 }
 
-model Bewerbung {
-  id             Int      @id @default(autoincrement())
-  erstelltAm     DateTime @default(now())
-  aktualisiertAm DateTime @updatedAt
+model Application {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   nachricht String
-  status    Bewerbungsstatus @default(AUSSTEHEND)
+  status    ApplicationStatus @default(PENDING)
 
-  Lernender   Lernender? @relation(fields: [lernenderId], references: [id])
-  lernenderId Int?
+  Learner   Learner? @relation(fields: [learnerId], references: [id])
+  learnerId Int?
 }
