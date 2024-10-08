@@ -5,6 +5,7 @@ import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../prisma/prisma.service';
+import { JwtPayload } from './jwtPayload.interface';
 
 @Injectable({})
 export class AuthService {
@@ -66,7 +67,7 @@ export class AuthService {
     userId: number,
     email: string,
   ): Promise<{ access_token: string }> {
-    const payload = {
+    const payload: JwtPayload = {
       sub: userId,
       email,
     };
