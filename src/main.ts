@@ -25,11 +25,16 @@ async function bootstrap() {
     .setVersion('1.0')
     .build();
 
-  const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('docs', app, document);
-
   const port = 3000;
+
+  const document = SwaggerModule.createDocument(app, config);
+  const path = 'docs';
+  SwaggerModule.setup(path, app, document);
+
   await app.listen(port, () => {
+    Logger.log(
+      'Swagger UI for API docs at http://localhost:' + port + '/' + path,
+    );
     Logger.log('Listening at http://localhost:' + port);
   });
 }
