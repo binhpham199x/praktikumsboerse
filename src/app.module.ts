@@ -4,6 +4,7 @@ import { PrismaModule } from './prisma/prisma.module';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { InternshipsModule } from './internships/internships.module';
+import { ApplicationsModule } from './applications/applications.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { InternshipsModule } from './internships/internships.module';
     AuthModule,
     UsersModule,
     InternshipsModule,
+    ApplicationsModule,
   ],
   controllers: [],
   providers: [],
