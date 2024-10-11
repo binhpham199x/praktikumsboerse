@@ -46,6 +46,7 @@ model Internship {
 
   name        String
   description String?
+  
   User        User   @relation(fields: [userId], references: [userId])
   userId      Int
 }
