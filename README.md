@@ -2,10 +2,19 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Prerequisites
+Docker
+NPM (Version 9.8.1+)
+Node.js (Version v18.18.0+)
+
 ## Installation
 
 ```bash
 $ npm install
+
+$ docker compose up -d
+
+$ npx prisma migrate dev
 ```
 
 ## Running the app
