@@ -22,6 +22,5 @@ $ npm run start:prod
 ```
 
 ## OPEN API Documentations
-
-can find at
+After run app, the SwaggerUI can be found at </br>
 http://localhost:3000/docs
